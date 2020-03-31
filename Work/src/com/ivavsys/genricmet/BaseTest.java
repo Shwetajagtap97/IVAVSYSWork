@@ -15,6 +15,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import Demo.DataDriven;
@@ -43,7 +44,7 @@ public class BaseTest {
 		}
 	}
 	public  WebDriver driver;
-	@BeforeTest
+	@BeforeMethod
 	public void beforeTest() 
 	{
 		
@@ -54,16 +55,14 @@ public class BaseTest {
 		driver.get(p.getProperty("URL"));
 		
 	}
-	@AfterTest
-	public void afterMethod(ITestResult testResult) throws IOException {
+	@AfterMethod
+	public void afterTest(ITestResult testResult) throws IOException {
 		String name = testResult.getName();
 		int status = testResult.getStatus();
-		if (status == 1)
-			Reporter.log("Test:" + name, true);
-		else {
-			Reporter.log("Test:" + name, true);
-			Reporter.log("Status:" + status, true);
-			String path=p.getProperty("IMPath")+name+".png";
+		if (status == 2)
+		{	System.out.println("fail");
+			String pat=p.getProperty("IMPath");
+			String path=pat+name+".png";
 			ScreenShot.takeScreenShot(driver, path);
 		}
 		driver.close();

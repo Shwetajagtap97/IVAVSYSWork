@@ -11,16 +11,16 @@
       <![CDATA[Not login]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93695" started-at="2020-03-31T12:32:57Z" finished-at="2020-03-31T12:34:31Z">
+  <suite name="Default suite" duration-ms="106215" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:55:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93695" started-at="2020-03-31T12:32:57Z" finished-at="2020-03-31T12:34:31Z">
+    <test name="Default test" duration-ms="106215" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:55:21Z">
       <class name="com.ivavsys.TestPOM.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@eaa59a]" name="beforeTest" is-config="true" duration-ms="17935" started-at="2020-03-31T12:32:57Z" finished-at="2020-03-31T12:33:15Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="14286" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:53:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@eaa59a]" name="login" duration-ms="11781" started-at="2020-03-31T12:33:16Z" data-provider="getData" finished-at="2020-03-31T12:33:27Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="2394" started-at="2020-03-31T14:53:49Z" data-provider="getData" finished-at="2020-03-31T14:53:51Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,22 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@eaa59a]" name="login" duration-ms="31818" started-at="2020-03-31T12:33:27Z" data-provider="getData" finished-at="2020-03-31T12:33:59Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="261" started-at="2020-03-31T14:53:51Z" finished-at="2020-03-31T14:53:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4] output=Sucessfully login]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="10463" started-at="2020-03-31T14:53:52Z" finished-at="2020-03-31T14:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="32339" started-at="2020-03-31T14:54:02Z" data-provider="getData" finished-at="2020-03-31T14:54:35Z">
           <params>
             <param index="0">
               <value>
@@ -71,7 +86,7 @@
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.fail(Assert.java:103)
 at com.ivavsys.pom.EnterTimeTrack.Vaildate(EnterTimeTrack.java:23)
-at com.ivavsys.TestPOM.LoginTest.login(LoginTest.java:29)
+at com.ivavsys.TestPOM.LoginTest.login(LoginTest.java:32)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -106,7 +121,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@eaa59a]" name="login" duration-ms="31965" started-at="2020-03-31T12:33:59Z" data-provider="getData" finished-at="2020-03-31T12:34:31Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="496" started-at="2020-03-31T14:54:35Z" finished-at="2020-03-31T14:54:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginTest.login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4] output=Not login]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="13561" started-at="2020-03-31T14:54:35Z" finished-at="2020-03-31T14:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="31626" started-at="2020-03-31T14:54:49Z" data-provider="getData" finished-at="2020-03-31T14:55:20Z">
           <params>
             <param index="0">
               <value>
@@ -133,7 +163,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.fail(Assert.java:103)
 at com.ivavsys.pom.EnterTimeTrack.Vaildate(EnterTimeTrack.java:23)
-at com.ivavsys.TestPOM.LoginTest.login(LoginTest.java:29)
+at com.ivavsys.TestPOM.LoginTest.login(LoginTest.java:32)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -168,44 +198,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@eaa59a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-31T12:34:31Z" finished-at="2020-03-31T12:34:31Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated afterMethod.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated afterMethod.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.afterRun(TestRunner.java:725)
-at org.testng.TestRunner.run(TestRunner.java:509)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="639" started-at="2020-03-31T14:55:20Z" finished-at="2020-03-31T14:55:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginTest.login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4] output=Not login]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
+        </test-method> <!-- afterTest -->
       </class> <!-- com.ivavsys.TestPOM.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
