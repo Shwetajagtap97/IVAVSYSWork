@@ -11,16 +11,16 @@
       <![CDATA[Not login]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106215" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:55:21Z">
+  <suite name="Default suite" duration-ms="106223" started-at="2020-03-31T15:05:58Z" finished-at="2020-03-31T15:07:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106215" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:55:21Z">
+    <test name="Default test" duration-ms="106223" started-at="2020-03-31T15:05:58Z" finished-at="2020-03-31T15:07:45Z">
       <class name="com.ivavsys.TestPOM.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="14286" started-at="2020-03-31T14:53:35Z" finished-at="2020-03-31T14:53:49Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="16956" started-at="2020-03-31T15:05:58Z" finished-at="2020-03-31T15:06:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="2394" started-at="2020-03-31T14:53:49Z" data-provider="getData" finished-at="2020-03-31T14:53:51Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="3050" started-at="2020-03-31T15:06:15Z" data-provider="getData" finished-at="2020-03-31T15:06:19Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="261" started-at="2020-03-31T14:53:51Z" finished-at="2020-03-31T14:53:52Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="267" started-at="2020-03-31T15:06:19Z" finished-at="2020-03-31T15:06:19Z">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="10463" started-at="2020-03-31T14:53:52Z" finished-at="2020-03-31T14:54:02Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="9802" started-at="2020-03-31T15:06:19Z" finished-at="2020-03-31T15:06:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="32339" started-at="2020-03-31T14:54:02Z" data-provider="getData" finished-at="2020-03-31T14:54:35Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="31686" started-at="2020-03-31T15:06:29Z" data-provider="getData" finished-at="2020-03-31T15:07:00Z">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="496" started-at="2020-03-31T14:54:35Z" finished-at="2020-03-31T14:54:35Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="671" started-at="2020-03-31T15:07:00Z" finished-at="2020-03-31T15:07:01Z">
           <params>
             <param index="0">
               <value>
@@ -132,11 +132,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="13561" started-at="2020-03-31T14:54:35Z" finished-at="2020-03-31T14:54:49Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="beforeTest" is-config="true" duration-ms="11159" started-at="2020-03-31T15:07:01Z" finished-at="2020-03-31T15:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="31626" started-at="2020-03-31T14:54:49Z" data-provider="getData" finished-at="2020-03-31T14:55:20Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="login" duration-ms="32001" started-at="2020-03-31T15:07:12Z" data-provider="getData" finished-at="2020-03-31T15:07:44Z">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="639" started-at="2020-03-31T14:55:20Z" finished-at="2020-03-31T14:55:21Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.ivavsys.TestPOM.LoginTest@1fbdac4]" name="afterTest" is-config="true" duration-ms="493" started-at="2020-03-31T15:07:44Z" finished-at="2020-03-31T15:07:45Z">
           <params>
             <param index="0">
               <value>

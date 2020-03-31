@@ -62,7 +62,9 @@ public class BaseTest {
 		if (status == 2)
 		{	System.out.println("fail");
 			String pat=p.getProperty("IMPath");
+			System.out.println(pat);
 			String path=pat+name+".png";
+			System.out.println(path);
 			ScreenShot.takeScreenShot(driver, path);
 		}
 		driver.close();
