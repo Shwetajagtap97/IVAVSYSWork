@@ -1,4 +1,4 @@
-package com.ivavsys.genricmet;
+package Demo;
 
 public interface AutoConstant {
 	String CHROME_Key = "webdriver.chrome.driver";

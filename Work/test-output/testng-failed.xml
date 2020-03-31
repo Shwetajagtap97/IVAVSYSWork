@@ -5,9 +5,9 @@
     <classes>
       <class name="com.ivavsys.TestPOM.LoginTest">
         <methods>
-          <include name="login"/>
+          <include name="login" invocation-numbers="1 2"/>
+          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="beforeMetho"/>
         </methods>
       </class> <!-- com.ivavsys.TestPOM.LoginTest -->
     </classes>

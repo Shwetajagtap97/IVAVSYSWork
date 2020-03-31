@@ -1,54 +1,60 @@
 package com.ivavsys.genricmet;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
-public class BaseTest implements AutoConstant
-{	public static Properties p;
-	public WebDriver driver;
-	static {
-		if(BROWSER_NAME.equalsIgnoreCase("Chrome"))
-		{
-		
-		System.setProperty(CHROME_Key, CHROME_Value);
+import Demo.DataDriven;
+
+public class BaseTest {
+	public static Properties p=new Properties();
+	static{
+		FileInputStream fis=null;
+		try {
+			fis = new FileInputStream("C:\\Users\\Lenovo\\git\\IVAVSYSWork\\Work\\PropertyFile");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		try {
+			p.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		if(BROWSER_NAME.equalsIgnoreCase("FireFox"))
-		{
-		System.setProperty(FIREFOX_Key, FIREFOX_Value);
+		try {
+			XLData.setXLFile(p.getProperty("DataFile"), p.getProperty("Sheet"));
+		} catch (EncryptedDocumentException | InvalidFormatException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
-	
-
-	@BeforeMethod
-	public void beforeMetho() {
-		if(BROWSER_NAME.equalsIgnoreCase("Chrome"))
-		{
-			driver = new ChromeDriver();
-		}
-		if(BROWSER_NAME.equalsIgnoreCase("FireFox"))
-		{
-			driver = new FirefoxDriver();
-		}
+	public  WebDriver driver;
+	@BeforeTest
+	public void beforeTest() 
+	{
+		
+		System.setProperty(p.getProperty("DriverKey"), p.getProperty("DriverValue"));
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(ITO, TimeUnit.SECONDS);
-		driver.get(URL);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.get(p.getProperty("URL"));
 		
 	}
-
-	@AfterMethod
+	@AfterTest
 	public void afterMethod(ITestResult testResult) throws IOException {
 		String name = testResult.getName();
 		int status = testResult.getStatus();
@@ -57,22 +63,9 @@ public class BaseTest implements AutoConstant
 		else {
 			Reporter.log("Test:" + name, true);
 			Reporter.log("Status:" + status, true);
-			String path=IMPAth+name+".png";
+			String path=p.getProperty("IMPath")+name+".png";
 			ScreenShot.takeScreenShot(driver, path);
 		}
 		driver.close();
 	}
-
-	public void pro() throws IOException{
-		FileInputStream fis=new FileInputStream("C:\\Users\\Lenovo\\workspace\\Ivavsys\\PropertyFile");
-		Properties p=new Properties();
-		p.load(fis);
-		System.out.println(p.getProperty("Driver"));
-		
-		
-		
-	}
-	
-	
-	
 }

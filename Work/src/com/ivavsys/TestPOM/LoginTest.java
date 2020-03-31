@@ -1,27 +1,32 @@
 package com.ivavsys.TestPOM;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-
 import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import com.ivavsys.genricmet.BaseTest;
-import com.ivavsys.genricmet.KeywordDriven;
 import com.ivavsys.genricmet.XLData;
-import com.ivavsys.pom.EnterTimeTrack;
 import com.ivavsys.pom.LoginPage;
+import com.ivavsys.pom.EnterTimeTrack;
+
 
 public class LoginTest extends BaseTest {
-	KeywordDriven k=new KeywordDriven();
-	@Test
-	public void login()
-	{
-		k.login();
-	}
 	
-}
-
-
+	@Test(dataProvider="getData",dataProviderClass=XLData.class)
+	public void login(String user,String pass,String title) throws EncryptedDocumentException, InvalidFormatException, IOException
+	{	
+		LoginPage lp=new LoginPage(driver);
+		lp.inputUserName(user);
+		lp.inputPassword(pass);
+		lp.inputWard();
+		lp.inputLogin();
+		EnterTimeTrack et = new EnterTimeTrack(driver);
+		et.Vaildate(driver, title);
+		beforeTest();
+	}
+}	

@@ -4,9 +4,28 @@ UserName:Admin
 Password:Admin123
 Wait:30
 SheetName:Sheet1
-ActionFilePath:C:\\Users\\Lenovo\\workspace\\Ivavsys\\Data\\ActionFile.xlsx
+ActionFilePath:C:\\Users\\Lenovo\\git\\IVAVSYSWork\\Work\\Data\\ActionFile.xlsx
 URL:https://demo.openmrs.org/openmrs/login.htm
-IMPath:./ScreenShot/
+IMPath:C:\\Users\\Lenovo\\git\\IVAVSYSWork\\Work\\ScreenShot
+DataFile:C:\\Users\\Lenovo\\git\\IVAVSYSWork\\Work\\Data\\data.xlsx
+Sheet:Sheet2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

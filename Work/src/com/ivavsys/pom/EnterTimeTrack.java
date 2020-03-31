@@ -12,10 +12,10 @@ public class EnterTimeTrack {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void Vaildate(WebDriver driver, long ETO, String title) {
+	public void Vaildate(WebDriver driver, String title) {
 
 		try {
-			WebDriverWait ww = new WebDriverWait(driver, ETO);
+			WebDriverWait ww = new WebDriverWait(driver, 30);
 			ww.until(ExpectedConditions.titleContains(title));
 			Reporter.log("Sucessfully login", true);
 		} catch (Exception e) {
