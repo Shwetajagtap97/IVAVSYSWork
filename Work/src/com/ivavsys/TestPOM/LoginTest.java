@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test(dataProvider="getData",dataProviderClass=XLData.class)
 	public void login(String user,String pass,String title) throws EncryptedDocumentException, InvalidFormatException, IOException
-	{	
+	{	System.out.println(user+":"+pass);
 		LoginPage lp=new LoginPage(driver);
 		lp.inputUserName(user);
 		lp.inputPassword(pass);

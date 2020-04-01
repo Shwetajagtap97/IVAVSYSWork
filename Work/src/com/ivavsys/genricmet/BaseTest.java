@@ -60,11 +60,8 @@ public class BaseTest {
 		String name = testResult.getName();
 		int status = testResult.getStatus();
 		if (status == 2)
-		{	System.out.println("fail");
-			String pat=p.getProperty("IMPath");
-			System.out.println(pat);
-			String path=pat+name+".png";
-			System.out.println(path);
+		{	
+			String path=p.getProperty("IMPath")+name+".png";
 			ScreenShot.takeScreenShot(driver, path);
 		}
 		driver.close();
